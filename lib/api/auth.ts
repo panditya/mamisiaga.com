@@ -1,9 +1,9 @@
 import axios from 'lib/axios';
 
 export const user = async () => {
-    const { data } = await axios.get('/user');
+  const { data } = await axios.get('/user');
 
-    return data;
+  return data;
 };
 
 export const login = (payload: any) => axios.post('/login', payload);

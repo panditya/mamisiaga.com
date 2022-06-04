@@ -1,12 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  TextInput,
-  PasswordInput,
-  Paper,
-  Title,
-  Container,
-  Button,
-} from '@mantine/core';
+import { TextInput, PasswordInput, Paper, Title, Container, Button } from '@mantine/core';
 import { useRouter } from 'next/router';
 import { useForm } from '@mantine/hooks';
 import api from 'lib/api';
@@ -48,20 +41,29 @@ export default function LoginPage() {
   }, [user]);
 
   return (
-      <Container size={420} my={40}>
-        <Title align="center">
-          MamiSiaga
-        </Title>
+    <Container size={420} my={40}>
+      <Title align="center">MamiSiaga</Title>
 
-        <Paper withBorder p={30} mt={30} radius="md">
-          <form onSubmit={form.onSubmit(onSubmit)}>
-            <TextInput label="Email" placeholder="Your email" required {...form.getInputProps('email')} />
-            <PasswordInput label="Password" placeholder="Your password" required mt="md" {...form.getInputProps('password')} />
-            <Button type="submit" fullWidth mt="xl">
-              Login
-            </Button>
-          </form>
-        </Paper>
-      </Container>
+      <Paper withBorder p={30} mt={30} radius="md">
+        <form onSubmit={form.onSubmit(onSubmit)}>
+          <TextInput
+            label="Email"
+            placeholder="Your email"
+            required
+            {...form.getInputProps('email')}
+          />
+          <PasswordInput
+            label="Password"
+            placeholder="Your password"
+            required
+            mt="md"
+            {...form.getInputProps('password')}
+          />
+          <Button type="submit" fullWidth mt="xl">
+            Login
+          </Button>
+        </form>
+      </Paper>
+    </Container>
   );
 }

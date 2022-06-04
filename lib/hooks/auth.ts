@@ -17,8 +17,8 @@ export const useAuth = () => {
   }, [user]);
 
   return {
-      user,
-      error,
-      mutate,
+    user,
+    error,
+    mutate,
   };
 };

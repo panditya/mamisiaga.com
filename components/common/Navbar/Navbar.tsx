@@ -1,12 +1,6 @@
 import React from 'react';
-import { Navbar as BaseNavbar, ScrollArea, createStyles, Title } from '@mantine/core';
-import {
-  Notes,
-  CalendarStats,
-  Gauge,
-  FileAnalytics,
-  Adjustments,
-} from 'tabler-icons-react';
+import { Navbar as BaseNavbar, ScrollArea, createStyles } from '@mantine/core';
+import { Notes, CalendarStats, Gauge, FileAnalytics, Adjustments } from 'tabler-icons-react';
 import { useAuth } from 'lib/hooks';
 import { UserButton } from '../UserButton/UserButton';
 import { LinksGroup } from '../NavbarLinks/NavbarLinksGroup';

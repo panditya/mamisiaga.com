@@ -24,9 +24,7 @@ export default function Layout({ children }: AppShellProps) {
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
       fixed
-      navbar={
-        <Navbar hiddenBreakpoint="sm" hidden={!opened} />
-      }
+      navbar={<Navbar hiddenBreakpoint="sm" hidden={!opened} />}
       header={
         <Header height={70} p="md">
           <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>

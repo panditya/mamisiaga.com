@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  UnstyledButton,
-  UnstyledButtonProps,
-  Group,
-  Avatar,
-  Text,
-  createStyles,
-} from '@mantine/core';
+import { UnstyledButton, Group, Avatar, Text, createStyles } from '@mantine/core';
 import { ChevronRight } from 'tabler-icons-react';
 import api from 'lib/api';
 
@@ -23,14 +16,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-interface UserButtonProps extends UnstyledButtonProps {
-  image: string;
-  name: string;
-  email: string;
-  icon?: React.ReactNode;
-}
-
-export function UserButton({ image, name, email, icon, ...others }: UserButtonProps) {
+export function UserButton({ image, name, email, icon, ...others }: any) {
   const { classes } = useStyles();
 
   const onLogout = () => {
